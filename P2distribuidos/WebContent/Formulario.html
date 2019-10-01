@@ -1,58 +1,61 @@
-<style>
-.color {
-	color: blue;
-}
-</style>
-
-<form>
-	<fieldset>
-		<legend>
-			<div class=color>
-				<h1>Registro de jugadores "Hundir la flota"</h1>
-			</div>
-
-		</legend>
-		<table>
-			<tr>
-				<td>Nombre(*):</td>
-				<td><input type="text" name="nombre" width="50%"><br></td>
-			</tr>
-			<tr>
-				<td>Primer apellido:</td>
-				<td><input type="text" name="pApellido" width="50%"><br></td>
-			</tr>
-			<tr>
-				<td>Segundo apellido:</td>
-				<td><input type="text" name="sApellido"><br></td>
-			</tr>
-			<tr>
-				<td>DNI(*):</td>
-				<td><input type="text" name="dni"><br></td>
-			</tr>
-			<tr>
-				<td>Email:</td>
-				<td><input type="email" name="email"><br></td>
-			</tr>
-			<tr>
-				<td>Tipo de pago(*):</td>
-				<td><input type="radio" name="pago"> Contrareembolso <input
-					type="radio" name="pago"> Tarjeta VISA <input type="radio"
-					name="pago"> Cheque<br></td>
-			</tr>
-			<tr>
-				<td>Contraseña(*):</td>
-				<td><input type="password" name="contraseña"><br></td>
-			</tr>
-			<tr>
-				<td>Repta su contraseña(*):</td>
-				<td><input type="password" name="recontraseña"><br></td>
-			</tr>
-			<tr>
-				<td><input type="submit" value="Enviar datos"></td>
-				<td><input type="reset" value="Borrar datos"></td>
-			</tr>
-		</table>
-
-
-	</fieldset>
-</form>
+<!DOCTYPE html>
+<<html>
+	<style>
+	.color {
+		color: blue;
+	}
+	</style>
+	
+	<form>
+		<fieldset>
+			<legend>
+				<div class=color>
+					<h1>Registro de jugadores "Hundir la flota"</h1>
+				</div>
+	
+			</legend>
+			<table>
+				<tr>
+					<td>Nombre(*):</td>
+					<td><input type="text" name="nombre" width="50%" required><br></td>
+				</tr>
+				<tr>
+					<td>Primer apellido:</td>
+					<td><input type="text" name="pApellido" width="50%" required><br></td>
+				</tr>
+				<tr>
+					<td>Segundo apellido:</td>
+					<td><input type="text" name="sApellido"><br></td>
+				</tr>
+				<tr>
+					<td>DNI(*):</td>
+					<td><input type="text" name="dni" required><br></td>
+				</tr>
+				<tr>
+					<td>Email:</td>
+					<td><input type="email" name="email"><br></td>
+				</tr>
+				<tr>
+					<td>Tipo de pago(*):</td>
+					<td><input type="radio" name="pago" required> Contrareembolso <input
+						type="radio" name="pago" required> Tarjeta VISA 
+						<input type="radio" name="pago" required> Cheque<br></td>
+				</tr>
+				<tr>
+					<td>Contraseña(*):</td>
+					<td><input type="password" name="contraseña" required><br></td>
+				</tr>
+				<tr>
+					<td>Repita su contraseña(*):</td>
+					<td><input type="password" name="recontraseña" required><br></td>
+				</tr>
+				<tr>
+					<td><input type="submit" value="Enviar datos"></td>
+					<td><input type="reset" value="Borrar datos"></td>
+				</tr>
+			</table>
+	
+	
+		</fieldset>
+	</form>
+</html>
